@@ -13,21 +13,34 @@ xhr.onreadystatechange = () => {
 
     for (let i = 0; i < response.length; i++) {
       output += `
-        <h4>${response[i].name}</h4>
-        <h4>${response[i].username}</h4>
-        <h4>${response[i].email}</h4>
-        <h4>${response[i].address.street}</h4>
-        <h4>${response[i].address.suite}</h4>
-        <h4>${response[i].address.city}</h4>
-        <h4>${response[i].address.zipcode}</h4>
-        <h4>${response[i].address.geo.lat}</h4>
-        <h4>${response[i].address.geo.lng}</h4>
+      <div style="display:flex; justify-content:space-evenly">
+        <div>
+          <h1>Personal details</h1>
+            <h4>Name: ${response[i].name}</h4>
+            <h4>UserName: @${response[i].username}</h4>
+            <h4>Email: ${response[i].email}</h4>
+            <div>
+              <h4>Suite: ${response[i].address.suite}</h4>
+              <h4>Address: ${response[i].address.street}</h4>
+              <h4>City: ${response[i].address.city}</h4>
+              <h4>Zip: ${response[i].address.zipcode}</h4>
+            </div>
+            <div>
+              <h4>Latitude: ${response[i].address.geo.lat}</h4>
+              <h4>Longitude: ${response[i].address.geo.lng}</h4>
+            </div>
+        </div>
 
-        <h4>${response[i].phone}</h4>
-        <h4>${response[i].website}</h4>
-        <h4>${response[i].company.name}</h4>
-        <h4>${response[i].company.cathphrase}</h4>
-        <h4>${response[i].company.bs}</h4>
+        <div>
+        <h1>Office details</h1>
+          <h4>Contact-info: ${response[i].phone}</h4>
+          <h4>Website: ${response[i].website}</h4>
+          <h4>Comapny-name: ${response[i].company.name}</h4>
+          <h4>Catchphrase: ${response[i].company.cathphrase}</h4>
+          <h4>Bs: ${response[i].company.bs}</h4>
+        </div>
+      </div>
+
 
         `;
     }
