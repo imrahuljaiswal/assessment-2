@@ -1,10 +1,18 @@
+.main-head{
+    background-color: #ccffcc;
+    display: flex;
+    margin-bottom: 2rem;
+}
+
 .heading{
-    font-size: 3rem;
+    font-size: 4rem;
     font-family: poppins;
     font-weight: 700;
     display: flex;
-    justify-content: center;
-    padding: 2rem;
+    /* justify-content: center; */
+    padding: 1rem;
+    align-items: center;
+    padding-left: 5rem;
 }
 
 h3{
@@ -15,4 +23,27 @@ h3{
 h4{
     font-family: poppins;
     font-size: .5rem;
+}
+
+.logo{
+    padding-left: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.img-logo{
+    height: 2.2rem;
+    width: 2.2rem;
+}
+
+
+.copyright{
+    font-family: poppins;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    color: #000;
+    background-color: #ffffaa;
 }
