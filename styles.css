@@ -1,0 +1,18 @@
+.heading{
+    font-size: 3rem;
+    font-family: poppins;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+h3{
+    font-family: poppins;
+    font-weight: 600;
+}
+
+h4{
+    font-family: poppins;
+    font-size: .5rem;
+}
